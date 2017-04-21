@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_phone" />
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/duplication_btn"
+        android:layout_width="213.67dp"
+        android:layout_height="33.67dp"
+        android:layout_marginTop="13.67dp"
+        android:background="@drawable/join_dup_btn"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="53.67dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_password" />
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="19.67dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_password" />
+
+        <EditText
+            android:id="@+id/pw2"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            android:hint="Password 재입력"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="19.67dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_name" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            android:hint="Name"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="19.67dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_age" />
+
+        <Spinner
+            android:id="@+id/age"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="19.67dp">
+
+        <ImageView
+            android:layout_width="102.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_gender" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="179.67dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/box_right"
+            android:gravity="center"
+            app:font="custom1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="213.67dp"
+        android:layout_height="33.67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/join_btn" />
+
+</LinearLayout>

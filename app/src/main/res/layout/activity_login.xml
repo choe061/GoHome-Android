@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="213.67dp"
+        android:layout_height="248.33dp"
+        android:background="@drawable/login_logo"
+        android:layout_marginTop="89.33dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:indeterminate="true"/>
+
+    <RelativeLayout
+        android:layout_width="213.67dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11.33dp">
+
+        <EditText
+            android:id="@+id/login_phone_num"
+            android:layout_width="213.67dp"
+            android:layout_height="34.00dp"
+            android:gravity="center"
+            android:background="@drawable/login_box"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:singleLine="true"
+            app:font="custom1"/>
+
+        <EditText
+            android:id="@+id/login_pw"
+            android:layout_width="213.67dp"
+            android:layout_height="34.00dp"
+            android:gravity="center"
+            android:layout_marginTop="6.33dp"
+            android:layout_below="@+id/login_phone_num"
+            android:background="@drawable/login_box"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            app:font="custom1"/>
+
+        <CheckBox
+            android:id="@+id/login_cookie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/login_pw"
+            android:layout_below="@+id/login_pw"
+            android:text="로그인 정보 저장"
+            android:textColor="@color/colorPrimary"
+            android:buttonTint="@color/colorPrimary"
+            app:font="custom1"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="213.67dp"
+        android:layout_height="33.67dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_cookie"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="53.67dp"
+        android:background="@drawable/login_button">
+
+        <Button
+            android:id="@+id/link_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="33.67dp"
+            android:background="@drawable/login_join"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="33.67dp"
+            android:background="@drawable/login_login"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

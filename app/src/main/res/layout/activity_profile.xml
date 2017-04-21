@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내 프로필"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginRight="50dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appbarlayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp">
+
+            <ImageView
+                android:layout_width="102.00dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_phone" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="179.67dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_right"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                app:font="custom1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_code"
+            android:layout_width="282.00dp"
+            android:layout_height="33.67dp"
+            android:background="@drawable/protector_box"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="21.67dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="21.67dp">
+
+            <ImageView
+                android:layout_width="102.00dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_name" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="179.67dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_right"
+                android:gravity="center"
+                android:hint="Name"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                app:font="custom1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="21.67dp">
+
+            <ImageView
+                android:layout_width="102.00dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_age" />
+
+            <Spinner
+                android:id="@+id/age"
+                android:layout_width="179.67dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_right"
+                android:gravity="center"
+                app:font="custom1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="21.67dp">
+
+            <ImageView
+                android:layout_width="102.00dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_gender" />
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="179.67dp"
+                android:layout_height="33.67dp"
+                android:background="@drawable/box_right"
+                android:gravity="center"
+                app:font="custom1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/profile_save_btn"
+            android:layout_width="213.67dp"
+            android:layout_height="33.67dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_save_btn" />
+
+        <Button
+            android:id="@+id/guardian_link_btn"
+            android:layout_width="213.67dp"
+            android:layout_height="33.67dp"
+            android:layout_below="@+id/profile_save_btn"
+            android:layout_marginTop="17.67dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_guard_btn" />
+
+        <Button
+            android:id="@+id/pw_change_link_btn"
+            android:layout_width="213.67dp"
+            android:layout_height="33.67dp"
+            android:layout_below="@+id/guardian_link"
+            android:layout_marginTop="17.67dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_pw_btn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35.67dp"
+            android:layout_marginBottom="35.67dp"
+            android:gravity="center"
+            android:textSize="12.00dp"
+            android:textColor="@color/colorPrimary"
+            android:text="프로필(연령/성별)은 긴급상황에서 신속하게 사용자를 찾는데 사용됩니다.\n 그 외 다른 용도로 절대 사용되지 않습니다."/>
+
+    </LinearLayout>
+
+</RelativeLayout>

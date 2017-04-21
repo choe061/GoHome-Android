@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="환경설정"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginRight="50dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/time_pref_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치확인주기"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/time_pref_et"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time_pref_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBaseline="@+id/time_pref_tv"
+            android:inputType="number"
+            android:maxLength="2"
+            android:hint="1"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time_pref_et"
+            android:text="분(최대10분)"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sms_pref_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS 문자 사용"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/sms_pref_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sms_pref_tv"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Yes"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sms112_pref_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="긴급호출 시 112 문자 전송"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/sms112_pref_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sms112_pref_tv"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Yes"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/voice_pref_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="긴급호출 음성인식 기능"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/voice_pref_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/voice_pref_tv"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Yes"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/upload_pref_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="본인 위치 업로드"
+            android:textSize="20dp"/>
+
+        <Switch
+            android:id="@+id/upload_pref_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/upload_pref_tv"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Yes"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pref_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:text="저장"
+        android:textSize="20dp" />
+
+</LinearLayout>
